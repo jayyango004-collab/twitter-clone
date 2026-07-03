@@ -15,81 +15,90 @@
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <!-- LEFT SIDEBAR -->
-        <aside class="sidebar">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
 
-            <div class="logo">
-                <i class="fa-brands fa-x-twitter"></i>
-            </div>
-
-            <nav>
-                <ul>
-                    <li><i class="fa-solid fa-house"></i><span>Home</span></li>
-                    <li><i class="fa-solid fa-magnifying-glass"></i><span>Explore</span></li>
-                    <li><i class="fa-regular fa-bell"></i><span>Notifications</span></li>
-                    <li><i class="fa-regular fa-envelope"></i><span>Messages</span></li>
-                    <li><i class="fa-regular fa-bookmark"></i><span>Bookmarks</span></li>
-                    <li><i class="fa-regular fa-user"></i><span>Profile</span></li>
-                    <li><i class="fa-solid fa-ellipsis"></i><span>More</span></li>
-                </ul>
-            </nav>
-
-            <button class="post-btn">Post</button>
-
-<div class="profile-card">
-
-    <img src="assets/profile.jpg" alt="Profile">
-
-    <div class="profile-info">
-        <h4>Jael</h4>
-        <p>@jaeldev</p>
-    </div>
-
-    <i class="fa-solid fa-ellipsis"></i>
-
-</div>
-
-</aside>
-
-        <!-- MAIN FEED -->
-        <main class="feed">
-
-            <div class="feed-header">
-                <h2>Home</h2>
-            </div>
-
-            <!-- Tweet Box -->
-            <div class="tweet-box">
-
-                <img src="assets/profile.jpg" alt="Profile">
-
-               <div class="tweet-input">
-
-    <textarea id="tweetText" placeholder="What's happening?"></textarea>
-
-    <div class="tweet-actions">
-
-        <div class="tweet-icons-top">
-            <i class="fa-regular fa-image"></i>
-            <i class="fa-regular fa-face-smile"></i>
-            <i class="fa-solid fa-calendar-days"></i>
-            <i class="fa-solid fa-location-dot"></i>
+        <div class="logo">
+            <i class="fa-brands fa-x-twitter"></i>
         </div>
 
-        <button id="postBtn">Post</button>
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-house"></i><span>Home</span></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i><span>Explore</span></li>
+                <li><i class="fa-regular fa-bell"></i><span>Notifications</span></li>
+                <li><i class="fa-regular fa-envelope"></i><span>Messages</span></li>
+                <li><i class="fa-regular fa-bookmark"></i><span>Bookmarks</span></li>
+                <li><i class="fa-regular fa-user"></i><span>Profile</span></li>
+                <li><i class="fa-solid fa-ellipsis"></i><span>More</span></li>
+            </ul>
+        </nav>
 
-    </div>
+        <!-- Dark Mode Button -->
+        <button id="themeToggle" class="theme-btn">
+            🌙 Dark Mode
+        </button>
 
-</div>
+        <!-- Post Button -->
+        <button class="post-btn">
+            Post
+        </button>
+
+        <!-- Profile -->
+        <div class="profile-card">
+
+            <img src="assets/profile.jpg" alt="Profile">
+
+            <div class="profile-info">
+                <h4>Jael</h4>
+                <p>@jaeldev</p>
+            </div>
+
+            <i class="fa-solid fa-ellipsis"></i>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN FEED -->
+    <main class="feed">
+
+        <div class="feed-header">
+            <h2>Home</h2>
+        </div>
+
+        <!-- Tweet Box -->
+        <div class="tweet-box">
+
+            <img src="assets/profile.jpg" alt="Profile">
+
+            <div class="tweet-input">
+
+                <textarea id="tweetText" placeholder="What's happening?"></textarea>
+
+                <div class="tweet-actions">
+
+                    <div class="tweet-icons-top">
+                        <i class="fa-regular fa-image"></i>
+                        <i class="fa-regular fa-face-smile"></i>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <button id="postBtn">Post</button>
+
+                </div>
 
             </div>
 
-            <!-- Sample Tweet -->
-    <div id="tweetFeed">
+        </div>
 
-         </div>    
+        <!-- TWEET FEED -->
+        <div id="tweetFeed">
+
+            <!-- Tweet 1 -->
             <div class="tweet">
 
                 <img src="assets/profile.jpg" alt="Profile">
@@ -103,165 +112,176 @@
                     </p>
 
                     <div class="tweet-icons">
-
                         <i class="fa-regular fa-comment"></i>
-
                         <i class="fa-solid fa-retweet"></i>
-
                         <i class="fa-regular fa-heart"></i>
-
                         <i class="fa-solid fa-chart-simple"></i>
-
                         <i class="fa-solid fa-share"></i>
-
                     </div>
 
                 </div>
 
             </div>
 
-         <!-- Tweet 2 -->
-<div class="tweet">
+            <!-- Tweet 2 -->
+            <div class="tweet">
 
-    <img src="assets/profile.jpg" alt="Profile">
+                <img src="assets/profile.jpg" alt="Profile">
 
-    <div class="tweet-content">
+                <div class="tweet-content">
 
-        <h3>Jane Smith <span>@janesmith · 5h</span></h3>
+                    <h3>Jane Smith <span>@janesmith · 5h</span></h3>
 
-        <p>
-            Just finished building my portfolio website! 🎉
-        </p>
+                    <p>
+                        Just finished building my portfolio website! 🎉
+                    </p>
 
-        <div class="tweet-icons">
-            <i class="fa-regular fa-comment"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-chart-simple"></i>
-            <i class="fa-solid fa-share"></i>
-        </div>
+                    <div class="tweet-icons">
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-solid fa-retweet"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
 
-    </div>
-
-</div>
-
-<!-- Tweet 3 -->
-<div class="tweet">
-
-    <img src="assets/profile.jpg" alt="Profile">
-
-    <div class="tweet-content">
-
-        <h3>Code Daily <span>@codedaily · 8h</span></h3>
-
-        <p>
-            Tip of the day 💡<br>
-            Practice coding every day, even if it's just for 30 minutes.
-        </p>
-
-        <div class="tweet-icons">
-            <i class="fa-regular fa-comment"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-chart-simple"></i>
-            <i class="fa-solid fa-share"></i>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- Tweet 4 -->
-<div class="tweet">
-
-    <img src="assets/profile.jpg" alt="Profile">
-
-    <div class="tweet-content">
-
-        <h3>Zaio Student <span>@zaiostudent · 12h</span></h3>
-
-        <p>
-            Working on my X Clone project today. Wish me luck! 🚀
-        </p>
-
-        <div class="tweet-icons">
-            <i class="fa-regular fa-comment"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-chart-simple"></i>
-            <i class="fa-solid fa-share"></i>
-        </div>
-
-    </div>
-
-</div>   
-
-        </main>
-
-        <!-- RIGHT SIDEBAR -->
-        <aside class="right-sidebar">
-
-          <div class="search-box">
-
-    <i class="fa-solid fa-magnifying-glass"></i>
-
-    <input type="text" placeholder="Search">
-
-</div>  
-
-            <div class="trending">
-
-    <h3>Trends for you</h3>
-
-    <div class="trend">
-        <small>Technology · Trending</small>
-        <h4>#JavaScript</h4>
-        <small>48K Posts</small>
-    </div>
-
-    <div class="trend">
-        <small>South Africa · Trending</small>
-        <h4>#HTML</h4>
-        <small>22K Posts</small>
-    </div>
-
-    <div class="trend">
-        <small>Programming · Trending</small>
-        <h4>#CSS</h4>
-        <small>18K Posts</small>
-    </div>
-
-    <div class="trend">
-        <small>Technology · Trending</small>
-        <h4>#WebDevelopment</h4>
-        <small>10K Posts</small>
-    </div>
-
-</div>
-
-                
-
-            <div class="follow">
-
-                <h3>Who to follow</h3>
-
-                <div class="user">
-                    <p>Jane Smith</p>
-                    <button>Follow</button>
-                </div>
-
-                <div class="user">
-                    <p>David Brown</p>
-                    <button>Follow</button>
                 </div>
 
             </div>
 
-        </aside>
+            <!-- Tweet 3 -->
+            <div class="tweet">
 
-    </div>
+                <img src="assets/profile.jpg" alt="Profile">
 
-    <script src="js/app.js"></script>
+                <div class="tweet-content">
+
+                    <h3>Code Daily <span>@codedaily · 8h</span></h3>
+
+                    <p>
+                        Tip of the day 💡<br>
+                        Practice coding every day, even if it's just for 30 minutes.
+                    </p>
+
+                    <div class="tweet-icons">
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-solid fa-retweet"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Tweet 4 -->
+            <div class="tweet">
+
+                <img src="assets/profile.jpg" alt="Profile">
+
+                <div class="tweet-content">
+
+                    <h3>Zaio Student <span>@zaiostudent · 12h</span></h3>
+
+                    <p>
+                        Working on my X Clone project today. Wish me luck! 🚀
+                    </p>
+
+                    <div class="tweet-icons">
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-solid fa-retweet"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+            </main>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="right-sidebar">
+
+        <!-- Search -->
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search">
+        </div>
+
+        <!-- Trending -->
+        <div class="trending">
+
+            <h3>Trends for you</h3>
+
+            <div class="trend">
+                <small>Technology · Trending</small>
+                <h4>#JavaScript</h4>
+                <small>48K Posts</small>
+            </div>
+
+            <div class="trend">
+                <small>South Africa · Trending</small>
+                <h4>#HTML</h4>
+                <small>22K Posts</small>
+            </div>
+
+            <div class="trend">
+                <small>Programming · Trending</small>
+                <h4>#CSS</h4>
+                <small>18K Posts</small>
+            </div>
+
+            <div class="trend">
+                <small>Technology · Trending</small>
+                <h4>#WebDevelopment</h4>
+                <small>10K Posts</small>
+            </div>
+
+        </div>
+
+        <!-- Who to Follow -->
+        <div class="follow">
+
+            <h3>Who to follow</h3>
+
+            <div class="user">
+                <div>
+                    <strong>Jane Smith</strong>
+                    <p>@janesmith</p>
+                </div>
+
+                <button>Follow</button>
+            </div>
+
+            <div class="user">
+                <div>
+                    <strong>David Brown</strong>
+                    <p>@davidbrown</p>
+                </div>
+
+                <button>Follow</button>
+            </div>
+
+            <div class="user">
+                <div>
+                    <strong>Code Daily</strong>
+                    <p>@codedaily</p>
+                </div>
+
+                <button>Follow</button>
+            </div>
+
+        </div>
+
+    </aside>
+
+</div>
+
+<script src="js/app.js"></script>
 
 </body>
 </html>

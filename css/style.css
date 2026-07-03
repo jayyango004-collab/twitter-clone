@@ -346,3 +346,77 @@ body {
     width:100%;
     outline:none;
 }
+
+.theme-btn{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:30px;
+    background:#2f3336;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.theme-btn:hover{
+    background:#3f4348;
+}
+
+/* LIGHT MODE */
+
+body.light-mode{
+    background:#ffffff;
+    color:#000;
+}
+
+body.light-mode .feed-header{
+    background:#fff;
+}
+
+body.light-mode .sidebar,
+body.light-mode .feed{
+    border-right:1px solid #ddd;
+}
+
+body.light-mode .tweet,
+body.light-mode .tweet-box{
+    border-bottom:1px solid #ddd;
+}
+
+body.light-mode .right-sidebar input{
+    background:#f2f2f2;
+    color:#000;
+}
+
+body.light-mode .search-box{
+    background:#f2f2f2;
+}
+
+body.light-mode .trending,
+body.light-mode .follow{
+    background:#f5f5f5;
+}
+
+body.light-mode textarea{
+    color:#000;
+    background:transparent;
+}
+
+body.light-mode .sidebar li:hover{
+    background:#ececec;
+}
+
+body.light-mode .profile-card:hover{
+    background:#ececec;
+}
+
+body.light-mode .trend:hover{
+    background:#ececec;
+}
+
+body.light-mode .theme-btn{
+    background:#ddd;
+    color:#000;
+}
