@@ -413,10 +413,30 @@ body.light-mode .profile-card:hover{
 }
 
 body.light-mode .trend:hover{
-    background:#ececec;
-}
+    background:#e5e5e5;
+}   
 
 body.light-mode .theme-btn{
     background:#ddd;
     color:#000;
+}
+
+body.light-mode .feed{
+    background:#fff;
+}
+
+body.light-mode .sidebar{
+    background:#fff;
+}
+
+body.light-mode .right-sidebar{
+    background:#fff;
+}
+
+body.light-mode .trend small{
+    color:#666;
+}
+
+body.light-mode .tweet-icons{
+    color:#555;
 }
