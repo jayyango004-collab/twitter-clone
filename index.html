@@ -88,7 +88,7 @@
 
         <div class="profile-card">
 
-            <img src="https://i.pravatar.cc/150?img=12" alt="Profile">
+            <img src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1780265473/IMG_20260126_215911_bbchfp.jpg" alt="Profile">
 
             <div class="profile-info">
 
@@ -132,7 +132,7 @@
 
         <section class="tweet-box">
 
-            <img src="https://i.pravatar.cc/150?img=12" alt="Profile">
+            <img src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1780265473/IMG_20260126_215911_bbchfp.jpg" alt="Profile">
 
             <div class="tweet-input">
 
@@ -188,7 +188,7 @@
 
                             <i class="bi bi-patch-check-fill verified"></i>
 
-                            <span>@OpenAI · 2h</span>
+                            <span>@OpenAI · <span class="time" data-time=""></span></span>
 
                         </div>
 
@@ -255,7 +255,7 @@
 
                             <i class="bi bi-patch-check-fill verified"></i>
 
-                            <span>@Nature · 4h</span>
+                            <span>@Nature · <span class="time" data-time=""></span></span>
 
                         </div>
 
@@ -486,7 +486,7 @@
 
                             <strong>Jael</strong>
 
-                            <span>@jaeldev · 12h</span>
+                            <span>@jaeldev · <span class="time"></span></span>
 
                         </div>
 
@@ -531,16 +531,17 @@
     <aside class="right-sidebar">
 
         <!-- Search -->
+<div class="search-box">
 
-        <div class="search-box">
+    <i class="bi bi-search"></i>
 
-            <i class="bi bi-search"></i>
+    <input 
+        id="searchInput"
+        type="text"
+        placeholder="Search"
+    />
 
-            <input
-                type="text"
-                placeholder="Search">
-
-        </div>
+</div>
 
         <!-- What's Happening -->
 
@@ -707,7 +708,7 @@
 
 </div>
 
-<script src="js/script.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 

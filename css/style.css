@@ -5,23 +5,26 @@
 
 /* RESET */
 
+html{
+    scroll-behavior:smooth;
+}
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-:root{
+:root {
+    --bg: #000000;
+    --text: #e7e9ea;
+    --card: #16181c;
+    --hover: #1a1a1a;
+    --border: #2f3336;
 
-    --bg:#000;
-    --surface:#16181c;
-    --border:#2f3336;
-    --text:#e7e9ea;
-    --grey:#71767b;
-    --blue:#1d9bf0;
-    --green:#00ba7c;
-    --pink:#f91880;
-
+    --blue: #1d9bf0;
+    --green: #00ba7c;
+    --pink: #f91880;
 }
 
 html,
@@ -148,7 +151,7 @@ ul{
 
 .logo:hover{
 
-    background:#181818;
+    background:var(--hover);
 
 }
 
@@ -186,7 +189,9 @@ ul{
 
 .sidebar li:hover{
 
-    background:#181818;
+    background:var(--hover);
+
+    transform:translateX(2px);
 
 }
 
@@ -270,7 +275,7 @@ ul{
 
 .profile-card:hover{
 
-    background:#181818;
+    background:var(--hover);
 
 }
 
@@ -321,7 +326,7 @@ ul{
 
     border-right:1px solid var(--border);
 
-    background:#000;
+    background:var(--bg);
 
     scrollbar-width:thin;
 
@@ -335,9 +340,9 @@ ul{
 
 .feed::-webkit-scrollbar-thumb{
 
-    background:#2f3336;
-
-    border-radius:20px;
+     background:#536471;
+     
+    border-radius:999px;
 
 }
 
@@ -355,7 +360,7 @@ ul{
 
     backdrop-filter:blur(16px);
 
-    background:rgba(0,0,0,.82);
+    background:color-mix(in srgb, var(--bg) 85%, transparent);
 
     border-bottom:1px solid var(--border);
 
@@ -397,7 +402,7 @@ ul{
 
 .tab:hover{
 
-    background:#101010;
+    background:var(--hover);
 
 }
 
@@ -483,7 +488,7 @@ ul{
 
     background:transparent;
 
-    color:#fff;
+    color:var(--text);
 
     font-size:20px;
 
@@ -585,7 +590,7 @@ ul{
 
 #postBtn:hover{
 
-    background:#1a8cd8;
+     filter:brightness(.95);
 
 }
 
@@ -616,7 +621,7 @@ ul{
 
     border-bottom:1px solid var(--border);
 
-    transition:.2s;
+    transition:background .2s ease;
 
     animation:fadeIn .25s ease;
 
@@ -624,7 +629,7 @@ ul{
 
 .tweet:hover{
 
-    background:#080808;
+     background: var(--hover);
 
 }
 
@@ -638,6 +643,14 @@ ul{
 
     flex-shrink:0;
 
+    transition:.2s;
+
+    cursor:pointer;
+
+}
+
+.profile-img:hover{
+    opacity:.85;
 }
 
 .tweet-content{
@@ -812,11 +825,15 @@ ul{
 
     transition:.2s;
 
+    cursor:pointer;
+
 }
 
 .icon i{
 
     font-size:18px;
+
+    transition:.2s;
 
 }
 
@@ -825,6 +842,12 @@ ul{
     font-size:13px;
 
 }
+
+.icon:hover i{
+    transform:scale(1.15);
+}
+
+
 
 /*=========================
         HOVERS
@@ -943,7 +966,7 @@ ul{
 
     z-index:50;
 
-    background:#000;
+    background:var(--card);
 
     padding:8px 0 14px;
 
@@ -957,7 +980,7 @@ ul{
 
     gap:12px;
 
-    background:#202327;
+    background:var(--card);
 
     border-radius:999px;
 
@@ -983,7 +1006,7 @@ ul{
 
     background:transparent;
 
-    color:#fff;
+    color:var(--text);
 
     font-size:15px;
 
@@ -1002,7 +1025,7 @@ ul{
 .trending,
 .follow{
 
-    background:#16181c;
+    background:var(--card);
 
     border-radius:18px;
 
@@ -1033,7 +1056,7 @@ ul{
 
 .trend:hover{
 
-    background:#1d1f23;
+     background:var(--hover);
 
 }
 
@@ -1073,7 +1096,7 @@ ul{
 
 .user:hover{
 
-    background:#1d1f23;
+     background:var(--hover);
 
 }
 
@@ -1125,7 +1148,7 @@ ul{
 
 .follow-btn:hover{
 
-    background:#e6e6e6;
+     opacity:.9;
 
 }
 
@@ -1191,12 +1214,12 @@ ul{
       LIGHT MODE
 =========================*/
 
-body.light-mode{
-
-    background:#fff;
-
-    color:#0f1419;
-
+body.light-mode {
+    --bg: #ffffff;
+    --text: #0f1419;
+    --card: #f7f9f9;
+    --hover: #e6e6e6;
+    --border: #eff3f4;
 }
 
 body.light-mode .feed,
@@ -1232,9 +1255,13 @@ body.light-mode textarea{
 }
 
 body.light-mode .search-box{
-
     background:#eff3f4;
+    border:1px solid transparent;
+}
 
+body.light-mode .search-box:focus-within{
+    background:#fff;
+    border:1px solid #1d9bf0;
 }
 
 body.light-mode .search-box input{
@@ -1247,15 +1274,39 @@ body.light-mode .trending,
 body.light-mode .follow{
 
     background:#f7f9f9;
+    border:1px solid #eff3f4;
 
 }
 
 body.light-mode .sidebar li:hover,
 body.light-mode .profile-card:hover{
 
-    background:#eff3f4;
+    background: var(--hover);
 
 }
+
+body.light-mode .tab{
+    color:#536471;
+}
+
+body.light-mode .tab.active{
+    color:#0f1419;
+}
+
+body.light-mode .tweet-content p{
+    color:#0f1419;
+}
+
+body.light-mode .tweet-user strong{
+    color:#0f1419;
+}
+
+body.light-mode .tweet-top .bi-three-dots:hover{
+    background:#e8f5fe;
+    color:#1d9bf0;
+}
+
+
 
 /*=========================
       RESPONSIVE
@@ -1323,7 +1374,7 @@ grid-template-columns:1fr;
 
 .sidebar{
 
-display:none;
+background: var(--bg);
 
 }
 
@@ -1333,4 +1384,3 @@ border-right:none;
 
 }
 
-}
