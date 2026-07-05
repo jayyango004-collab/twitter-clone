@@ -12,7 +12,7 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -26,7 +26,7 @@
 
     <aside class="sidebar">
 
-        <div>
+        <div class="sidebar-top">
 
             <div class="logo">
                 <i class="bi bi-twitter-x"></i>
@@ -52,18 +52,18 @@
                     </li>
 
                     <li>
-                        <i class="bi bi-people"></i>
-                        <span>Follow</span>
-                    </li>
-
-                    <li>
-                        <i class="bi bi-chat"></i>
-                        <span>Chat</span>
+                        <i class="bi bi-envelope"></i>
+                        <span>Messages</span>
                     </li>
 
                     <li>
                         <i class="bi bi-lightning-charge"></i>
                         <span>Grok</span>
+                    </li>
+
+                    <li>
+                        <i class="bi bi-people"></i>
+                        <span>Communities</span>
                     </li>
 
                     <li>
@@ -86,11 +86,9 @@
 
         </div>
 
-        <!-- Account -->
-
         <div class="profile-card">
 
-            <img src="assets/profile.jpg" alt="">
+            <img src="https://i.pravatar.cc/150?img=12" alt="Profile">
 
             <div class="profile-info">
 
@@ -107,12 +105,14 @@
     </aside>
 
     <!-- ==========================
-              FEED
+            CENTER FEED
     =========================== -->
 
     <main class="feed">
 
-        <div class="feed-header">
+        <!-- Header -->
+
+        <header class="feed-header">
 
             <div class="feed-tabs">
 
@@ -126,42 +126,36 @@
 
             </div>
 
-        </div>
+        </header>
 
         <!-- Composer -->
 
         <section class="tweet-box">
 
-            <img src="assets/profile.jpg" alt="">
+            <img src="https://i.pravatar.cc/150?img=12" alt="Profile">
 
             <div class="tweet-input">
 
                 <textarea
                     id="tweetText"
-                    placeholder="What is happening?!"></textarea>
+                    maxlength="280"
+                    placeholder="What is happening?"></textarea>
 
                 <div class="tweet-bottom">
 
                     <div class="tweet-tools">
 
                         <i class="bi bi-image"></i>
-
                         <i class="bi bi-file-earmark-play"></i>
-
                         <i class="bi bi-bar-chart"></i>
-
                         <i class="bi bi-emoji-smile"></i>
-
                         <i class="bi bi-calendar-event"></i>
-
                         <i class="bi bi-geo-alt"></i>
 
                     </div>
 
                     <button id="postBtn">
-
                         Post
-
                     </button>
 
                 </div>
@@ -170,237 +164,362 @@
 
         </section>
 
-        <!-- Tweets -->
+        <!-- ==========================
+                FEED
+        =========================== -->
 
         <div id="tweetFeed">
-                    <!-- ==========================
-                TWEET 1
-        ========================== -->
 
-        <article class="tweet">
+            <!-- Tweet 1 -->
 
-            <img src="assets/profile1.jpg" class="profile-img">
-
-            <div class="tweet-content">
-
-                <div class="tweet-top">
-
-                    <div class="tweet-user">
-
-                        <strong>Jael</strong>
-
-                        <i class="bi bi-patch-check-fill verified"></i>
-
-                        <span>@jaeldev · 2h</span>
-
-                    </div>
-
-                    <i class="bi bi-three-dots"></i>
-
-                </div>
-
-                <p>
-                    Finally finished rebuilding my X clone 🚀
-                    Really loving how close it's getting to the real thing.
-                </p>
-
-                <div class="tweet-icons">
-
-                    <div class="icon reply">
-                        <i class="bi bi-chat"></i>
-                        <span>128</span>
-                    </div>
-
-                    <div class="icon repost">
-                        <i class="bi bi-repeat"></i>
-                        <span>54</span>
-                    </div>
-
-                    <div class="icon like">
-                        <i class="bi bi-heart"></i>
-                        <span>1.2K</span>
-                    </div>
-
-                    <div class="icon views">
-                        <i class="bi bi-bar-chart"></i>
-                        <span>95K</span>
-                    </div>
-
-                    <div class="icon bookmark">
-                        <i class="bi bi-bookmark"></i>
-                    </div>
-
-                    <div class="icon share">
-                        <i class="bi bi-upload"></i>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-
-
-
-        <!-- ==========================
-                IMAGE POST
-        ========================== -->
-
-        <article class="tweet">
-
-            <img src="assets/profile2.jpg" class="profile-img">
-
-            <div class="tweet-content">
-
-                <div class="tweet-top">
-
-                    <div class="tweet-user">
-
-                        <strong>Nature</strong>
-
-                        <i class="bi bi-patch-check-fill verified"></i>
-
-                        <span>@nature · 5h</span>
-
-                    </div>
-
-                    <i class="bi bi-three-dots"></i>
-
-                </div>
-
-                <p>
-                    Beautiful afternoon 🌸
-                </p>
-
-                <!-- KEEP YOUR OWN IMAGE HERE -->
+            <article class="tweet">
 
                 <img
-                    src="assets/post1.jpg"
-                    class="tweet-image"
-                    alt="">
+                    src="https://i.pravatar.cc/150?img=33"
+                    class="profile-img">
 
-                <div class="tweet-icons">
+                <div class="tweet-content">
 
-                    <div class="icon reply">
-                        <i class="bi bi-chat"></i>
-                        <span>932</span>
-                    </div>
+                    <div class="tweet-top">
 
-                    <div class="icon repost">
-                        <i class="bi bi-repeat"></i>
-                        <span>421</span>
-                    </div>
+                        <div class="tweet-user">
 
-                    <div class="icon like">
-                        <i class="bi bi-heart"></i>
-                        <span>18K</span>
-                    </div>
+                            <strong>OpenAI</strong>
 
-                    <div class="icon views">
-                        <i class="bi bi-bar-chart"></i>
-                        <span>1.8M</span>
-                    </div>
+                            <i class="bi bi-patch-check-fill verified"></i>
 
-                    <div class="icon bookmark">
-                        <i class="bi bi-bookmark"></i>
-                    </div>
+                            <span>@OpenAI · 2h</span>
 
-                    <div class="icon share">
-                        <i class="bi bi-upload"></i>
-                    </div>
+                        </div>
 
-                </div>
-
-            </div>
-
-        </article>
-
-
-
-
-
-        <!-- ==========================
-                VIDEO POST
-        ========================== -->
-
-        <article class="tweet">
-
-            <img src="assets/profile3.jpg" class="profile-img">
-
-            <div class="tweet-content">
-
-                <div class="tweet-top">
-
-                    <div class="tweet-user">
-
-                        <strong>Tech Daily</strong>
-
-                        <i class="bi bi-patch-check-fill verified"></i>
-
-                        <span>@techdaily · 8h</span>
+                        <i class="bi bi-three-dots"></i>
 
                     </div>
 
-                    <i class="bi bi-three-dots"></i>
+                    <p>
+                        Building amazing things starts with curiosity.
+                        What are you creating today?
+                    </p>
 
-                </div>
+                    <div class="tweet-icons">
 
-                <p>
+                        <div class="icon reply">
+                            <i class="bi bi-chat"></i>
+                            <span>321</span>
+                        </div>
 
-                    Amazing AI progress this week 👇
+                        <div class="icon repost">
+                            <i class="bi bi-repeat"></i>
+                            <span>85</span>
+                        </div>
 
-                </p>
+                        <div class="icon like">
+                            <i class="bi bi-heart"></i>
+                            <span>5.8K</span>
+                        </div>
 
-                <!-- KEEP YOUR OWN VIDEO HERE -->
+                        <div class="icon views">
+                            <i class="bi bi-bar-chart"></i>
+                            <span>201K</span>
+                        </div>
 
-                <video
-                    class="tweet-video"
-                    controls>
+                        <div class="icon bookmark">
+                            <i class="bi bi-bookmark"></i>
+                        </div>
 
-                    <source
-                        src="assets/video.mp4"
-                        type="video/mp4">
+                        <div class="icon share">
+                            <i class="bi bi-upload"></i>
+                        </div>
 
-                </video>
-
-                <div class="tweet-icons">
-
-                    <div class="icon reply">
-                        <i class="bi bi-chat"></i>
-                        <span>1.8K</span>
-                    </div>
-
-                    <div class="icon repost">
-                        <i class="bi bi-repeat"></i>
-                        <span>612</span>
-                    </div>
-
-                    <div class="icon like">
-                        <i class="bi bi-heart"></i>
-                        <span>24K</span>
-                    </div>
-
-                    <div class="icon views">
-                        <i class="bi bi-bar-chart"></i>
-                        <span>2.5M</span>
-                    </div>
-
-                    <div class="icon bookmark">
-                        <i class="bi bi-bookmark"></i>
-                    </div>
-
-                    <div class="icon share">
-                        <i class="bi bi-upload"></i>
                     </div>
 
                 </div>
 
-            </div>
+            </article>
 
-        </article>
+            <!-- Tweet 2 -->
+
+            <article class="tweet">
+
+                <img
+                    src="https://i.pravatar.cc/150?img=41"
+                    class="profile-img">
+
+                <div class="tweet-content">
+
+                    <div class="tweet-top">
+
+                        <div class="tweet-user">
+
+                            <strong>Nature Daily</strong>
+
+                            <i class="bi bi-patch-check-fill verified"></i>
+
+                            <span>@Nature · 4h</span>
+
+                        </div>
+
+                        <i class="bi bi-three-dots"></i>
+
+                    </div>
+
+                    <p>
+                        Spring blossoms never disappoint 🌸
+                    </p>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1527061011665-3652c757a4d4?w=900"
+                        class="tweet-image">
+
+                    <div class="tweet-icons">
+
+                        <div class="icon reply"><i class="bi bi-chat"></i><span>412</span></div>
+
+                        <div class="icon repost"><i class="bi bi-repeat"></i><span>123</span></div>
+
+                        <div class="icon like"><i class="bi bi-heart"></i><span>18K</span></div>
+
+                        <div class="icon views"><i class="bi bi-bar-chart"></i><span>1.3M</span></div>
+
+                        <div class="icon bookmark"><i class="bi bi-bookmark"></i></div>
+
+                        <div class="icon share"><i class="bi bi-upload"></i></div>
+
+                    </div>
+
                 </div>
+
+            </article>
+                        <!-- Tweet 3 -->
+
+            <article class="tweet">
+
+                <img
+                    src="https://i.pravatar.cc/150?img=15"
+                    class="profile-img">
+
+                <div class="tweet-content">
+
+                    <div class="tweet-top">
+
+                        <div class="tweet-user">
+
+                            <strong>Netflix</strong>
+
+                            <i class="bi bi-patch-check-fill verified"></i>
+
+                            <span>@netflix · 6h</span>
+
+                        </div>
+
+                        <i class="bi bi-three-dots"></i>
+
+                    </div>
+
+                    <p>
+                        Weekend plans? 🍿
+                        Time to start another series you'll finish in one sitting.
+                    </p>
+
+                    <div class="tweet-icons">
+
+                        <div class="icon reply">
+                            <i class="bi bi-chat"></i>
+                            <span>897</span>
+                        </div>
+
+                        <div class="icon repost">
+                            <i class="bi bi-repeat"></i>
+                            <span>312</span>
+                        </div>
+
+                        <div class="icon like">
+                            <i class="bi bi-heart"></i>
+                            <span>22K</span>
+                        </div>
+
+                        <div class="icon views">
+                            <i class="bi bi-bar-chart"></i>
+                            <span>2.1M</span>
+                        </div>
+
+                        <div class="icon bookmark">
+                            <i class="bi bi-bookmark"></i>
+                        </div>
+
+                        <div class="icon share">
+                            <i class="bi bi-upload"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Tweet 4 -->
+
+            <article class="tweet">
+
+                <img
+                    src="https://i.pravatar.cc/150?img=55"
+                    class="profile-img">
+
+                <div class="tweet-content">
+
+                    <div class="tweet-top">
+
+                        <div class="tweet-user">
+
+                            <strong>Travel</strong>
+
+                            <span>@travel · 8h</span>
+
+                        </div>
+
+                        <i class="bi bi-three-dots"></i>
+
+                    </div>
+
+                    <p>
+                        Somewhere between the mountains and the clouds. 🏔️
+                    </p>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900"
+                        class="tweet-image"
+                        alt="Travel">
+
+                    <div class="tweet-icons">
+
+                        <div class="icon reply"><i class="bi bi-chat"></i><span>654</span></div>
+
+                        <div class="icon repost"><i class="bi bi-repeat"></i><span>248</span></div>
+
+                        <div class="icon like"><i class="bi bi-heart"></i><span>15K</span></div>
+
+                        <div class="icon views"><i class="bi bi-bar-chart"></i><span>980K</span></div>
+
+                        <div class="icon bookmark"><i class="bi bi-bookmark"></i></div>
+
+                        <div class="icon share"><i class="bi bi-upload"></i></div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Tweet 5 (Video) -->
+
+            <article class="tweet">
+
+                <img
+                    src="https://i.pravatar.cc/150?img=23"
+                    class="profile-img">
+
+                <div class="tweet-content">
+
+                    <div class="tweet-top">
+
+                        <div class="tweet-user">
+
+                            <strong>Tech Daily</strong>
+
+                            <i class="bi bi-patch-check-fill verified"></i>
+
+                            <span>@techdaily · 10h</span>
+
+                        </div>
+
+                        <i class="bi bi-three-dots"></i>
+
+                    </div>
+
+                    <p>
+                        AI keeps moving faster every single week 🚀
+                    </p>
+
+                    <video
+                        class="tweet-video"
+                        controls>
+
+                        <source
+                            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                            type="video/mp4">
+
+                    </video>
+
+                    <div class="tweet-icons">
+
+                        <div class="icon reply"><i class="bi bi-chat"></i><span>1.2K</span></div>
+
+                        <div class="icon repost"><i class="bi bi-repeat"></i><span>509</span></div>
+
+                        <div class="icon like"><i class="bi bi-heart"></i><span>31K</span></div>
+
+                        <div class="icon views"><i class="bi bi-bar-chart"></i><span>3.7M</span></div>
+
+                        <div class="icon bookmark"><i class="bi bi-bookmark"></i></div>
+
+                        <div class="icon share"><i class="bi bi-upload"></i></div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Tweet 6 -->
+
+            <article class="tweet">
+
+                <img
+                    src="https://i.pravatar.cc/150?img=8"
+                    class="profile-img">
+
+                <div class="tweet-content">
+
+                    <div class="tweet-top">
+
+                        <div class="tweet-user">
+
+                            <strong>Jael</strong>
+
+                            <span>@jaeldev · 12h</span>
+
+                        </div>
+
+                        <i class="bi bi-three-dots"></i>
+
+                    </div>
+
+                    <p>
+                        Finally rebuilding this X clone exactly how I imagined it.
+                        The UI is getting closer to the real thing every hour. 💙
+                    </p>
+
+                    <div class="tweet-icons">
+
+                        <div class="icon reply"><i class="bi bi-chat"></i><span>44</span></div>
+
+                        <div class="icon repost"><i class="bi bi-repeat"></i><span>9</span></div>
+
+                        <div class="icon like"><i class="bi bi-heart"></i><span>382</span></div>
+
+                        <div class="icon views"><i class="bi bi-bar-chart"></i><span>9.6K</span></div>
+
+                        <div class="icon bookmark"><i class="bi bi-bookmark"></i></div>
+
+                        <div class="icon share"><i class="bi bi-upload"></i></div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+                    </div>
         <!-- End Tweet Feed -->
 
     </main>
@@ -479,6 +598,10 @@
 
             </div>
 
+            <a href="#" class="show-more">
+                Show more
+            </a>
+
         </section>
 
         <!-- Who To Follow -->
@@ -491,7 +614,9 @@
 
                 <div class="user-info">
 
-                    <img src="assets/profile4.jpg">
+                    <img
+                        src="https://i.pravatar.cc/150?img=68"
+                        alt="OpenAI">
 
                     <div>
 
@@ -504,9 +629,7 @@
                 </div>
 
                 <button class="follow-btn">
-
                     Follow
-
                 </button>
 
             </div>
@@ -515,7 +638,9 @@
 
                 <div class="user-info">
 
-                    <img src="assets/profile5.jpg">
+                    <img
+                        src="https://i.pravatar.cc/150?img=58"
+                        alt="Netflix">
 
                     <div>
 
@@ -528,9 +653,7 @@
                 </div>
 
                 <button class="follow-btn">
-
                     Follow
-
                 </button>
 
             </div>
@@ -539,7 +662,9 @@
 
                 <div class="user-info">
 
-                    <img src="assets/profile6.jpg">
+                    <img
+                        src="https://i.pravatar.cc/150?img=44"
+                        alt="Google">
 
                     <div>
 
@@ -552,12 +677,14 @@
                 </div>
 
                 <button class="follow-btn">
-
                     Follow
-
                 </button>
 
             </div>
+
+            <a href="#" class="show-more">
+                Show more
+            </a>
 
         </section>
 
@@ -566,16 +693,11 @@
         <footer class="sidebar-footer">
 
             <a href="#">Terms of Service</a>
-
             <a href="#">Privacy Policy</a>
-
-            <a href="#">Cookies</a>
-
+            <a href="#">Cookie Policy</a>
             <a href="#">Accessibility</a>
-
-            <a href="#">Ads Info</a>
-
-            <a href="#">More</a>
+            <a href="#">Ads info</a>
+            <a href="#">More...</a>
 
             <p>© 2026 X Clone</p>
 
@@ -585,7 +707,8 @@
 
 </div>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
+
 </html>
