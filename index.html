@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>X Clone</title>
 
     <!-- Font Awesome -->
@@ -11,360 +14,598 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <!-- LEFT SIDEBAR -->
-    <aside class="sidebar">
+<!-- ========================= -->
+<!-- LEFT SIDEBAR -->
+<!-- ========================= -->
 
-        <div class="logo">
-            <i class="fa-brands fa-x-twitter"></i>
+<aside class="sidebar">
+
+    <div class="logo">
+        <i class="fa-brands fa-x-twitter"></i>
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Explore</span>
+            </li>
+
+            <li>
+                <i class="fa-regular fa-bell"></i>
+                <span>Notifications</span>
+            </li>
+
+            <li>
+                <i class="fa-regular fa-envelope"></i>
+                <span>Messages</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-robot"></i>
+                <span>Grok</span>
+            </li>
+
+            <li>
+                <i class="fa-regular fa-user"></i>
+                <span>Profile</span>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-ellipsis"></i>
+                <span>More</span>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <button id="themeToggle" class="theme-btn">
+        🌙 Dark Mode
+    </button>
+
+    <button class="post-btn">
+        Post
+    </button>
+
+    <div class="profile-card">
+
+        <img src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1780265473/IMG_20260126_215911_bbchfp.jpg">
+
+        <div class="profile-info">
+
+            <h4>Jael</h4>
+            <p>@jaeldev</p>
+
         </div>
 
-        <nav>
-            <ul>
-                <li><i class="fa-solid fa-house"></i><span>Home</span></li>
-                <li><i class="fa-solid fa-magnifying-glass"></i><span>Explore</span></li>
-                <li><i class="fa-regular fa-bell"></i><span>Notifications</span></li>
-                <li><i class="fa-regular fa-envelope"></i><span>Messages</span></li>
-                <li><i class="fa-regular fa-bookmark"></i><span>Bookmarks</span></li>
-                <li><i class="fa-regular fa-user"></i><span>Profile</span></li>
-                <li><i class="fa-solid fa-ellipsis"></i><span>More</span></li>
-            </ul>
-        </nav>
+        <i class="fa-solid fa-ellipsis"></i>
 
-        <!-- Dark Mode Button -->
-        <button id="themeToggle" class="theme-btn">
-            🌙 Dark Mode
+    </div>
+
+</aside>
+
+<!-- ========================= -->
+<!-- MAIN FEED -->
+<!-- ========================= -->
+
+<main class="feed">
+
+<div class="feed-tabs">
+
+    <button class="tab active-tab">
+        For you
+    </button>
+
+    <button class="tab">
+        Following
+    </button>
+
+</div>
+
+<div class="tweet-box">
+
+    <img class="profile-img"
+        src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1780265473/IMG_20260126_215911_bbchfp.jpg">
+
+    <div class="tweet-input">
+
+        <textarea
+            id="tweetText"
+            placeholder="What's happening?"></textarea>
+
+        <div class="tweet-actions">
+
+            <div class="tweet-icons-top">
+
+                <i class="fa-regular fa-image"></i>
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+                <i class="fa-regular fa-face-smile"></i>
+                <i class="fa-regular fa-calendar"></i>
+                <i class="fa-solid fa-location-dot"></i>
+
+            </div>
+
+            <button id="postBtn">
+                Post
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="tweetFeed">
+
+    <!-- ========================= -->
+<!-- TWEET 1 -->
+<!-- ========================= -->
+
+<div class="tweet">
+
+    <img class="profile-img"
+        src="assets/profile.jpg"
+        alt="Profile">
+
+    <div class="tweet-content">
+
+        <h3>
+            Frontend Daily
+            <span>@frontenddaily · 3h</span>
+        </h3>
+
+        <p>
+CSS tip 👇
+
+Use Grid for page layouts and Flexbox for components.
+
+You'll save yourself hours of frustration later.
+        </p>
+
+        <div class="tweet-icons">
+
+            <div class="icon comment">
+                <i class="fa-regular fa-comment"></i>
+                <span>124</span>
+            </div>
+
+            <div class="icon repost">
+                <i class="fa-solid fa-retweet"></i>
+                <span>942</span>
+            </div>
+
+            <div class="icon like">
+                <i class="fa-regular fa-heart"></i>
+                <span>8.4K</span>
+            </div>
+
+            <div class="icon views">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>1.2M</span>
+            </div>
+
+            <div class="icon bookmark">
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="icon share">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- TWEET 2 (IMAGE) -->
+<!-- ========================= -->
+
+<div class="tweet">
+
+    <img class="profile-img"
+        src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1779265648/main-sample.png"
+        alt="Profile">
+
+    <div class="tweet-content">
+
+        <h3>
+
+            Nomsa
+
+            <span>@nomsa_travels · 2h</span>
+
+        </h3>
+
+        <p>
+
+Weekend escape.
+
+No deadlines.
+
+No meetings.
+
+Just open roads, music and beautiful scenery. 🚗🌄
+
+        </p>
+
+        <img
+        class="tweet-image"
+        src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1783199805/bailey-mahon-2b6K4uy0Hbc-unsplash_bhsv1y.jpg"
+        alt="Road Trip">
+
+        <div class="tweet-icons">
+
+            <div class="icon comment">
+                <i class="fa-regular fa-comment"></i>
+                <span>438</span>
+            </div>
+
+            <div class="icon repost">
+                <i class="fa-solid fa-retweet"></i>
+                <span>2.1K</span>
+            </div>
+
+            <div class="icon like">
+                <i class="fa-regular fa-heart"></i>
+                <span>39K</span>
+            </div>
+
+            <div class="icon views">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>6.8M</span>
+            </div>
+
+            <div class="icon bookmark">
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="icon share">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- TWEET 3 -->
+<!-- ========================= -->
+
+<div class="tweet">
+
+    <img class="profile-img"
+        src="assets/profile.jpg">
+
+    <div class="tweet-content">
+
+        <h3>
+
+            Foodie SA
+
+            <span>@foodiesa · 1h</span>
+
+        </h3>
+
+        <p>
+
+People seriously underestimate how good homemade burgers taste.
+
+Fresh buns.
+
+Real cheese.
+
+Crispy chips.
+
+Nothing beats it 🍔🍟
+
+        </p>
+
+        <div class="tweet-icons">
+
+            <div class="icon comment">
+                <i class="fa-regular fa-comment"></i>
+                <span>72</span>
+            </div>
+
+            <div class="icon repost">
+                <i class="fa-solid fa-retweet"></i>
+                <span>189</span>
+            </div>
+
+            <div class="icon like">
+                <i class="fa-regular fa-heart"></i>
+                <span>4.6K</span>
+            </div>
+
+            <div class="icon views">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>214K</span>
+            </div>
+
+            <div class="icon bookmark">
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="icon share">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- TWEET 4 (VIDEO) -->
+<!-- ========================= -->
+
+<div class="tweet">
+
+    <img class="profile-img"
+        src="assets/profile.jpg">
+
+    <div class="tweet-content">
+
+        <h3>
+
+            Movie Hub
+
+            <span>@MovieHub · 38m</span>
+
+        </h3>
+
+        <p>
+
+This trailer has been on repeat all day.
+
+Definitely watching this on opening weekend. 🎬
+
+        </p>
+
+        <video
+            class="tweet-video"
+            controls>
+
+            <source src="assets/movie.mp4" type="video/mp4">
+
+        </video>
+
+        <div class="tweet-icons">
+
+            <div class="icon comment">
+                <i class="fa-regular fa-comment"></i>
+                <span>1.4K</span>
+            </div>
+
+            <div class="icon repost">
+                <i class="fa-solid fa-retweet"></i>
+                <span>7.8K</span>
+            </div>
+
+            <div class="icon like">
+                <i class="fa-regular fa-heart"></i>
+                <span>108K</span>
+            </div>
+
+            <div class="icon views">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span>11M</span>
+            </div>
+
+            <div class="icon bookmark">
+                <i class="fa-regular fa-bookmark"></i>
+            </div>
+
+            <div class="icon share">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    </div>
+
+</main>
+
+<!-- ========================= -->
+<!-- RIGHT SIDEBAR -->
+<!-- ========================= -->
+
+<aside class="right-sidebar">
+
+    <!-- Search -->
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            placeholder="Search">
+
+    </div>
+
+
+    <!-- Premium -->
+
+    <div class="premium">
+
+        <h2>Subscribe to Premium</h2>
+
+        <p>
+            Subscribe to unlock new features and if eligible,
+            receive a share of revenue.
+        </p>
+
+        <button class="premium-btn">
+            Subscribe
         </button>
 
-        <!-- Post Button -->
-        <button class="post-btn">
-            Post
-        </button>
+    </div>
 
-        <!-- Profile -->
-        <div class="profile-card">
 
-            <img src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1780265473/IMG_20260126_215911_bbchfp.jpg" alt="Profile">
+    <!-- Trends -->
 
-            <div class="profile-info">
-                <h4>Jael</h4>
-                <p>@jaeldev</p>
-            </div>
+    <div class="trending">
 
-            <i class="fa-solid fa-ellipsis"></i>
+        <h2>Trends for you</h2>
 
-        </div>
+        <div class="trend">
 
-    </aside>
+            <small>Technology · Trending</small>
 
-    <!-- MAIN FEED -->
-    <main class="feed">
+            <h4>#JavaScript</h4>
 
-        <div class="feed-header">
-            <h2>Home</h2>
-        </div>
-
-        <!-- Tweet Box -->
-        <div class="tweet-box">
-
-            <img src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1780265473/IMG_20260126_215911_bbchfp.jpg" alt="Profile">
-
-            <div class="tweet-input">
-
-                <textarea id="tweetText" placeholder="What's happening?"></textarea>
-
-                <div class="tweet-actions">
-
-                    <div class="tweet-icons-top">
-                        <i class="fa-regular fa-image"></i>
-                        <i class="fa-regular fa-face-smile"></i>
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-
-                    <button id="postBtn">Post</button>
-
-                </div>
-
-            </div>
+            <small>48.8K posts</small>
 
         </div>
 
-        <!-- TWEET FEED -->
-        <div id="tweetFeed">
+        <div class="trend">
 
-            <!-- Tweet 1 -->
-            <div class="tweet">
+            <small>South Africa · Trending</small>
 
-                <img class="profile-img"
-                src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1783204049/jackson-sophat-_t-l5FFH8VA-unsplash_bpumek.jpg" 
-                alt="Profile">
+            <h4>#CapeTown</h4>
 
-                <div class="tweet-content">
-
-                    <h3>Frontend Daily <span>@frontenddaily · 3h</span></h3>
-
-                   <p>
-                      Which CSS feature do you use the most?
-                      <br><br>
-                     🔹 Flexbox
-                     <br>
-                     🔹 Grid
-                     <br>
-                    🔹 Animations
-                     <br>
-                    🔹 Variables
-                    </p>
-
-                    <div class="tweet-icons">
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-retweet"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Tweet 2 -->
-            <div class="tweet">
-
-                <img class="profile-img"
-                src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1779265648/main-sample.png" 
-                alt="Profile">
-
-                <div class="tweet-content">
-
-                    <h3>Nomsa <span>@nomsa_travels · 2h</span></h3>
-
-                    <p>
-                        Weekend plans: road trip, good music, and zero work emails. 🚗🌄
-                   </p>
-
-                   <img class="tweet-image"
-                     src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1783199805/bailey-mahon-2b6K4uy0Hbc-unsplash_bhsv1y.jpg"
-                     alt="Road trip">
-
-
-                    <div class="tweet-icons">
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-retweet"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Tweet 3 -->
-            <div class="tweet">
-
-                <img class="profile-img"
-                src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1779265648/cld-sample-4.jpg" 
-                alt="Profile">
-
-                <div class="tweet-content">
-
-                   <h3>Foodie SA <span>@foodiesa · 3h</span></h3>
-
-                   <p>
-                        Hot take: Chips taste better with extra cheese. 🍟🧀
-                   </p>
-
-                    <div class="tweet-icons">
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-retweet"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Tweet 4 -->
-            <div class="tweet">
-
-                <img class="profile-img"
-                src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1783202167/pexels-cottonbro-8273630_bmazgk.jpg" 
-                alt="Profile">
-
-                <div class="tweet-content">
-
-                    <h3>Movie Hub <span>@MovieHub · 4h</span></h3>
-
-                    <p>
-                        What's the last movie you watched that you'd recommend to everyone? 🍿
-                    </p>
-                    
-                    <div class="tweet-icons">
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-retweet"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-
-                </div>
-
-            </div>
-
-             <!-- Tweet 5 -->
-            <div class="tweet">
-
-                <img class="profile-img"
-                src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1779265640/samples/outdoor-woman.jpg" 
-                alt="Profile">
-
-                <div class="tweet-content">
-
-                    <h3>Janexxx <span>@dancechoreo · 4h</span></h3>
-
-                    <p>
-                        Just had to post my day
-                    </p>
-
-                     <video class="tweet-video" controls>
-                     <source src="https://res.cloudinary.com/ds4yx5h6d/video/upload/v1779265635/samples/dance-2.mp4" type="video/mp4">
-                     </video>
-                    
-                    <div class="tweet-icons">
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-retweet"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-
-                </div>
-
-            </div>
-
-             <!-- Tweet 6 -->
-            <div class="tweet">
-
-                <img class="profile-img"
-                src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1779265648/main-sample.png" 
-                alt="Profile">
-
-                <div class="tweet-content">
-
-                    <h3>Anne <span>@Call_me_Anniiii · 2h</span></h3>
-
-                    <p>
-                        Some of the most beautiful moments don't ask for attention—they simply exist, just like flowers blooming under the warmth of the sun. Every blossom is a reminder that growth takes time, patience, and a little light. Today felt like one of those quiet moments worth appreciating, where nature does all the talking and all that's left is to stop, breathe, and admire the beauty around us. 🌸☀️🍃
-                   </p>
-
-                   <img class="tweet-image"
-                     src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1783205033/aaron-burden-FHWgqOniOSY-unsplash_cmvjj4.jpg"
-                     alt="daylight">
-
-
-                    <div class="tweet-icons">
-                        <i class="fa-regular fa-comment"></i>
-                        <i class="fa-solid fa-retweet"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-chart-simple"></i>
-                        <i class="fa-solid fa-share"></i>
-                    </div>
-
-                </div>
-
-            </div>
+            <small>22.4K posts</small>
 
         </div>
 
-            </main>
+        <div class="trend">
 
-    <!-- RIGHT SIDEBAR -->
-    <aside class="right-sidebar">
+            <small>Gaming · Trending</small>
 
-        <!-- Search -->
-        <div class="search-box">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search">
-        </div>
+            <h4>#GTA6</h4>
 
-        <!-- Trending -->
-        <div class="trending">
-
-            <h3>Trends for you</h3>
-
-            <div class="trend">
-                <small>Technology · Trending</small>
-                <h4>#JavaScript</h4>
-                <small>48K Posts</small>
-            </div>
-
-            <div class="trend">
-                <small>South Africa · Trending</small>
-                <h4>#HTML</h4>
-                <small>22K Posts</small>
-            </div>
-
-            <div class="trend">
-                <small>Programming · Trending</small>
-                <h4>#CSS</h4>
-                <small>18K Posts</small>
-            </div>
-
-            <div class="trend">
-                <small>Technology · Trending</small>
-                <h4>#WebDevelopment</h4>
-                <small>10K Posts</small>
-            </div>
+            <small>85K posts</small>
 
         </div>
 
-        <!-- Who to Follow -->
-        <div class="follow">
+        <div class="trend">
 
-            <h3>Who to follow</h3>
+            <small>Sports · Trending</small>
 
-            <div class="user">
-                <div>
-                    <strong>Jane Smith</strong>
-                    <p>@janesmith</p>
-                </div>
+            <h4>#PSL</h4>
 
-                <button>Follow</button>
-            </div>
-
-            <div class="user">
-                <div>
-                    <strong>David Brown</strong>
-                    <p>@davidbrown</p>
-                </div>
-
-                <button>Follow</button>
-            </div>
-
-            <div class="user">
-                <div>
-                    <strong>Code Daily</strong>
-                    <p>@codedaily</p>
-                </div>
-
-                <button>Follow</button>
-            </div>
+            <small>17K posts</small>
 
         </div>
 
-    </aside>
+        <div class="trend">
+
+            <small>Entertainment · Trending</small>
+
+            <h4>#Netflix</h4>
+
+            <small>65K posts</small>
+
+        </div>
+
+        <a href="#">Show more</a>
+
+    </div>
+
+
+
+    <!-- Who To Follow -->
+
+    <div class="follow">
+
+        <h2>Who to follow</h2>
+
+        <div class="user">
+
+            <img src="assets/profile.jpg">
+
+            <div>
+
+                <strong>Jane Smith</strong>
+
+                <p>@janesmith</p>
+
+            </div>
+
+            <button class="follow-btn">
+                Follow
+            </button>
+
+        </div>
+
+
+
+        <div class="user">
+
+            <img src="https://res.cloudinary.com/ds4yx5h6d/image/upload/v1779265648/main-sample.png">
+
+            <div>
+
+                <strong>Nomsa</strong>
+
+                <p>@nomsa_travels</p>
+
+            </div>
+
+            <button class="follow-btn">
+                Follow
+            </button>
+
+        </div>
+
+
+
+        <div class="user">
+
+            <img src="assets/profile.jpg">
+
+            <div>
+
+                <strong>Code Daily</strong>
+
+                <p>@codedaily</p>
+
+            </div>
+
+            <button class="follow-btn">
+                Follow
+            </button>
+
+        </div>
+
+
+        <a href="#">Show more</a>
+
+    </div>
+
+</aside>
 
 </div>
 
 <script src="js/app.js"></script>
 
 </body>
+
 </html>
